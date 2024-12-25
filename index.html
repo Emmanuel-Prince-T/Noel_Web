@@ -91,11 +91,17 @@
                     <textarea class="form-control" id="wishes" placeholder="Vos vœux de Noël" required></textarea>
                 </div>
                 <div class="form-group">
-                    <input type="file" class="form-control" id="videoUpload" accept="video/*" required>
+                    <input type="file" class="form-control" id="fileUpload" accept="image/*,video/*,.pdf" required>
                 </div>
                 <button type="submit" class="btn btn-danger btn-block">Envoyer mes vœux</button>
+                <div id="preview-container" class="preview-container"></div>
             </form>
             
+            <div id="upload-history" class="upload-history">
+                <h4>Fichiers uploadés</h4>
+                <div id="history-list" class="history-list"></div>
+            </div>
+
             <div id="wishCard" class="wish-card hidden">
                 <div class="snow-overlay"></div>
                 <h3 class="sender-name"></h3>
